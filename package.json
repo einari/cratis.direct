@@ -1,0 +1,14 @@
+{
+  "name": "cratis-direct-site",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Marketing site for Cratis Direct",
+  "type": "module",
+  "scripts": {
+    "serve": "node ./serve.mjs",
+    "dev": "node ./serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

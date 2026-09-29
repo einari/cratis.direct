@@ -1,0 +1,631 @@
+<!doctype html>
+<!--
+  Copyright (c) Cratis. All rights reserved.
+  Licensed under the MIT license. See LICENSE file in the project root for full license information.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cratis Direct — The control plane for agentic engineering</title>
+    <meta name="description" content="Direct governs how AI agents work on your software: journeys with assurance gates, classified backlogs, production signals that trigger investigations, and content that ships with the release. Coming soon." />
+    <meta name="theme-color" content="#181818" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <meta property="og:title" content="Cratis Direct — Agents do the work. Direct decides how far it goes." />
+    <meta property="og:description" content="The control plane for agentic engineering. Journeys, assurance gates, production investigations, content and strategy in one governed system." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/journeys.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═════════ NAV ═════════ -->
+<header class="nav">
+    <div class="nav-inner">
+        <a href="#top" class="brand" aria-label="Cratis Direct home">
+            <span class="brand-mark"><img src="assets/logo.svg" alt="" /></span>
+            Direct <small>by Cratis</small>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+            <a class="link" href="#model">Model</a>
+            <a class="link" href="#journeys">Journeys</a>
+            <a class="link" href="#assurance">Assurance</a>
+            <a class="link" href="#classification">Classification</a>
+            <a class="link" href="#operations">Operations</a>
+            <a class="link" href="#content">Content</a>
+            <a class="link" href="#roadmap">Roadmap</a>
+            <span class="pill">Coming soon</span>
+            <a class="btn btn-primary" href="https://app.cratis.direct">Log in</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero">
+    <div class="wrap">
+        <span class="eyebrow">The control plane for agentic engineering</span>
+        <h1>Agents do the work. <span class="hl">Direct decides how far it goes.</span></h1>
+        <p class="lede">AI agents can already investigate an issue, write the change and open the pull request. What they can't do is tell you whether they should have. Direct is the governed system around them: journeys, gates, evidence, and a line of sight from production back to the backlog.</p>
+        <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="https://app.cratis.direct">Log in to Direct</a>
+            <a class="btn btn-ghost btn-lg" href="#model">See how it works</a>
+        </div>
+        <div class="hero-note">Coming soon · in daily use across 55 Cratis repositories</div>
+
+        <div class="hero-shot reveal">
+            <div class="frame">
+                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/journeys</span></div>
+                <img src="assets/img/journeys.png" alt="The Direct Journeys board: every issue as a card in Intake, Investigation, Plan, Implementation or Release, with the things that need a person called out." width="1440" height="900" />
+            </div>
+            <p class="caption"><b>Real screenshot from production.</b> The Journeys board with our own backlog on it. Cards that need a person are flagged; cards blocked by reality — like an issue closed mid-journey — say so.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ PROBLEM ═════════ -->
+<section id="problem">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">The problem</span>
+            <h2>Speed was never the hard part.</h2>
+            <p>Once agents can write code, the constraint moves. It becomes deciding what they work on, proving what they did, and noticing when the world changed underneath them.</p>
+        </div>
+        <div class="grid g3">
+            <div class="card pain reveal">
+                <h3>An agent that starts on everything spends tokens on everything.</h3>
+                <p>A label flips to "agent can do this" and work begins. Nobody chose it, nobody capped it, and the bill is the first signal.</p>
+                <div class="relief"><b>With Direct:</b> nothing starts until a person admits it into a journey with a work ceiling. Classification describes an issue; it never starts one.</div>
+            </div>
+            <div class="card pain reveal">
+                <h3>A merged pull request is not evidence.</h3>
+                <p>"The tests passed" and "the model said it was fine" don't answer why a change was allowed to ship, or under whose rules.</p>
+                <div class="relief"><b>With Direct:</b> every stage ends at a gate that evaluates recorded evidence against versioned rules. The verdict, the evidence and the rule version are kept.</div>
+            </div>
+            <div class="card pain reveal">
+                <h3>Production talks in a channel nobody has time to read.</h3>
+                <p>The alert fires every five minutes, a human reads it eventually, and an agent could have fixed it in thirty seconds.</p>
+                <div class="relief"><b>With Direct:</b> the alert lands where an agent investigates it at once. If it can't resolve it, a person gets the findings, not a notification.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ MODEL ═════════ -->
+<section id="model" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">What Direct is</span>
+            <h2>Five loops. One governed system.</h2>
+            <p>Most tools automate one loop — usually the one that writes code. Engineering is more than that. Direct runs the whole cycle from intent to production and back, and gives each loop the same guardrails: a person decides, the rules are visible, the history is kept.</p>
+        </div>
+
+        <div class="loops reveal">
+            <div class="loop core">
+                <span class="n">01</span>
+                <h3>Deliver</h3>
+                <span class="sub">ADLC · journeys</span>
+                <p>The Agentic Development Lifecycle. Issues move from intake through investigation, plan, implementation and release, up to a ceiling you set.</p>
+            </div>
+            <div class="loop core">
+                <span class="n">02</span>
+                <h3>Assure</h3>
+                <span class="sub">gates · rules · evidence</span>
+                <p>The assurance engine. Each stage ends at a gate. Rules evaluate evidence. Unknown never means yes.</p>
+            </div>
+            <div class="loop">
+                <span class="n">03</span>
+                <h3>Operate</h3>
+                <span class="sub">alerts · investigations</span>
+                <p>Production signals reach an agent with scoped operational access. Findings come back attached to the alert.</p>
+            </div>
+            <div class="loop">
+                <span class="n">04</span>
+                <h3>Publish</h3>
+                <span class="sub">content · outlets</span>
+                <p>Blog posts, the weekly digest and talks follow their own journey with their own gates, from brief to verified publication.</p>
+            </div>
+            <div class="loop">
+                <span class="n">05</span>
+                <h3>Steer</h3>
+                <span class="sub">vision · roadmap · chains</span>
+                <p>Vision documents ground triage. Roadmap plans are generated from the issues you select. Chains sequence work that depends on a release.</p>
+            </div>
+        </div>
+        <p class="loop-foot">ADLC is the first loop, not the whole product. We call the whole thing <code>agentic operations</code>: governing agents across delivery, production and communication.</p>
+    </div>
+</section>
+
+<!-- ═════════ JOURNEYS ═════════ -->
+<section id="journeys">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">01 · Deliver — the journey</span>
+            <h2>Work starts in exactly one way.</h2>
+            <p>A journey is the life of one issue or blog post, recorded as events on its own stream. It moves through stages. Between every pair of stages sits a gate. Only a gate that allows can move it on.</p>
+        </div>
+
+        <div class="reveal">
+            <div class="rail" aria-label="Issue journey: stages and gates">
+                <div class="stage"><span>01 / stage</span><b>Intake</b></div>
+                <div class="gate"><i></i><em>G01</em></div>
+                <div class="stage"><span>02 / stage</span><b>Investigation</b></div>
+                <div class="gate"><i></i><em>G02</em></div>
+                <div class="stage"><span>03 / stage</span><b>Plan</b></div>
+                <div class="gate"><i></i><em>G03</em></div>
+                <div class="stage"><span>04 / stage</span><b>Implementation</b></div>
+                <div class="gate"><i></i><em>G04</em></div>
+                <div class="stage"><span>05 / stage</span><b>Release</b></div>
+                <div class="gate"><i></i><em>G05</em></div>
+                <div class="outcome"><span>outcome</span><b>Complete</b></div>
+            </div>
+            <div class="rail-legend">Issue journey · 5 gates · nothing on any screen can set a stage directly — every action is a command the journey decides on</div>
+        </div>
+
+        <div class="split top" style="margin-top:3.5rem">
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Admit, then set a ceiling.</h3>
+                <p>You pick issues from the backlog and choose <strong>how far work may proceed</strong>: pause after investigation, after the plan, after implementation, or run through to release. The ceiling is where work stops. Every stage up to it still has to pass its gate.</p>
+                <ul class="checks">
+                    <li><b>Preview before you commit.</b> Direct splits your selection into ready and held, with a reason for each held item.</li>
+                    <li><b>One journey per subject.</b> An issue already in a journey can't be admitted twice.</li>
+                    <li><b>Extend scope later.</b> Raise the ceiling from the board when the gate has earned it.</li>
+                    <li><b>Replies steer the next stage.</b> A comment on the agent's write-up becomes input for the next dispatch instead of starting a second run.</li>
+                    <li><b>Changed intent is judged, not ignored.</b> If the title or body changes after the plan, the Decision Engine says whether the plan still holds. If it can't tell, you decide.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/journeys?journey=…</span></div>
+                    <img src="assets/img/journey-detail.png" alt="A journey opened in the side panel: Intake and Investigation gates passed, Plan in progress, and a drift notice that the issue was closed while its journey is still active." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>Drift, caught.</b> This issue was closed on GitHub while its journey was still in Plan. Direct doesn't quietly carry on; it stops the journey and asks whether to abandon or re-open.</p>
+            </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:3.5rem">
+            <div class="card reveal">
+                <span class="k">Reality check</span>
+                <h3>Journeys stay honest against what actually happened.</h3>
+                <p>Every 15 minutes, and whenever a journey changes, Direct compares the journey's record with the facts of the work. A mismatch becomes <strong style="color:var(--text-strong)">drift</strong> and stops the journey advancing: subject closed, a pull request merged before Release, a worker that failed without finishing, a publication taken down, or governance that changed under it.</p>
+            </div>
+            <div class="card reveal">
+                <span class="k">Two journeys today</span>
+                <h3>Issues and blog posts share one engine.</h3>
+                <p>The issue journey runs <span class="mono hl">Intake → Investigation → Plan → Implementation → Release</span>. The blog journey runs <span class="mono hl">Brief → Draft → Editorial review → Publish</span>. Same gates, same board, same designer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ ASSURANCE ═════════ -->
+<section id="assurance" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">02 · Assure — the assurance engine</span>
+            <h2>A gate decides. Evidence and rules explain why.</h2>
+            <p>A gate collects every rule bound to it, evaluates each against the recorded evidence, maps each finding to an outcome, and takes the most restrictive one. Your organization writes the rules. You can read, simulate and version them.</p>
+        </div>
+
+        <div class="split">
+            <div class="reveal">
+                <h3 style="margin-bottom:1rem">Five outcomes, ordered by how much they ask of you.</h3>
+                <div class="ladder">
+                    <div class="rung"><span class="tag allow">Allow</span><span>The work may proceed.</span></div>
+                    <div class="rung"><span class="tag review">Requires human review</span><span>A person approves, with a reason, for exactly the evidence evaluated.</span></div>
+                    <div class="rung"><span class="tag explain">Requires explanation</span><span>Someone explains. The explanation becomes evidence for a new attempt.</span></div>
+                    <div class="rung"><span class="tag remediate">Requires remediation</span><span>The stage is worked again. After two attempts a person decides.</span></div>
+                    <div class="rung"><span class="tag block">Block</span><span>Fix the cause first. A block can't be bypassed by asking for a redo.</span></div>
+                </div>
+                <p class="ladder-note"><b>Unknown is never a pass.</b> Missing evidence, an evaluator error, low confidence or a result that hasn't arrived all default to human review. A late result for evidence that has since changed is recorded but can never authorize the current work.</p>
+            </div>
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/adlc-designer</span></div>
+                    <img src="assets/img/designer-implementation.png" alt="The ADLC / Journey Designer showing gate G04, Implementation quality, with its policy and the rules bound to it: Build and tests pass, Static analysis, Intent satisfied, Plan conformance." loading="lazy" width="1440" height="1000" />
+                </div>
+                <p class="caption"><b>The ADLC / Journey Designer.</b> Gate G04 — Implementation quality — with 16 required rules. Deterministic checks, Roslyn analysis and LLM judgement sit in one policy.</p>
+            </div>
+        </div>
+
+        <div class="split flip top" style="margin-top:5rem">
+            <div class="reveal">
+                <div class="rules-wrap">
+                    <table class="rules">
+                        <thead><tr><th>Rule</th><th>Evaluator</th><th>When it doesn't pass</th></tr></thead>
+                        <tbody>
+                            <tr><td colspan="3" class="gate-label" style="border:0">G01 · Intake</td></tr>
+                            <tr><td>Security screening</td><td class="ev">Deterministic</td><td><span class="tag review">Human review</span></td></tr>
+                            <tr><td>Spam and solicitation</td><td class="ev">LLM</td><td><span class="tag block">Block</span></td></tr>
+                            <tr><td>Actionable issue</td><td class="ev">LLM</td><td><span class="tag remediate">Remediation</span></td></tr>
+                            <tr><td colspan="3" class="gate-label" style="border:0">G03 · Plan quality</td></tr>
+                            <tr><td>Unplanned scope</td><td class="ev">LLM</td><td><span class="tag explain">Explanation</span></td></tr>
+                            <tr><td>Breaking changes planned</td><td class="ev">LLM</td><td><span class="tag review">Human review</span></td></tr>
+                            <tr><td>Security controls</td><td class="ev">Decision Engine</td><td><span class="tag block">Block</span></td></tr>
+                            <tr><td colspan="3" class="gate-label" style="border:0">G04 · Implementation quality</td></tr>
+                            <tr><td>Build and tests pass</td><td class="ev">Deterministic</td><td><span class="tag remediate">Remediation</span></td></tr>
+                            <tr><td>Static analysis</td><td class="ev">Roslyn</td><td><span class="tag remediate">Remediation</span></td></tr>
+                            <tr><td>Tests not weakened</td><td class="ev">LLM</td><td><span class="tag review">Human review</span></td></tr>
+                            <tr><td>Security scan</td><td class="ev">External tool</td><td><span class="tag block">Block</span></td></tr>
+                            <tr><td>Review policy</td><td class="ev">Composite</td><td><span class="tag review">Human review</span></td></tr>
+                            <tr><td colspan="3" class="gate-label" style="border:0">G05 · Release</td></tr>
+                            <tr><td>Merged</td><td class="ev">Deterministic</td><td><span class="tag block">Block</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="caption"><b>Excerpt of our own active governance</b> — 42 rules and 37 bindings across 5 gates for the issue journey.</p>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Six kinds of evaluator. Pick the cheapest one that can decide.</h3>
+                <p>A rule names one evaluator. Cheap deterministic checks run first in spirit; a language model is asked only where judgement is the point.</p>
+                <div class="chips">
+                    <span class="chip"><b>Deterministic</b> fields &amp; thresholds</span>
+                    <span class="chip"><b>Composite</b> all / any / threshold / sequence</span>
+                    <span class="chip"><b>LLM</b> structured finding + confidence</span>
+                    <span class="chip"><b>Decision Engine</b> configured choices</span>
+                    <span class="chip"><b>External</b> tool or job</span>
+                    <span class="chip"><b>Roslyn</b> build diagnostics</span>
+                </div>
+                <ul class="checks">
+                    <li><b>A low-confidence verdict counts as Unknown.</b> Only a recognized, explained verdict at or above the configured confidence concludes anything.</li>
+                    <li><b>Tool rules wait.</b> A rule handed to an external scanner stays pending until the result arrives for the evidence evaluated.</li>
+                    <li><b>Not applicable isn't passed.</b> A required gate with no applicable rule holds as a configuration problem.</li>
+                    <li><b>Dismissals are evidence.</b> Dismiss a screening flag as a false positive and the rule passes on re-evaluation, with your decision on file. Screen again and it still blocks? The dismissal stops counting.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-head" style="margin-top:6rem; margin-bottom:2rem">
+            <h3 style="font-size:1.6rem" class="reveal">Governance is versioned, and only a person activates it.</h3>
+        </div>
+        <div class="reveal">
+            <div class="flow">
+                <span class="node">Draft</span><span class="arrow">→</span>
+                <span class="node">Validate</span><span class="arrow">→</span>
+                <span class="node">Simulate</span><span class="arrow">→</span>
+                <span class="node">Review</span><span class="arrow">→</span>
+                <span class="node">Approve</span><span class="arrow">→</span>
+                <span class="node on">Active v2</span>
+            </div>
+        </div>
+        <div class="grid g3" style="margin-top:2rem">
+            <div class="card reveal"><span class="k">Journeys keep their version</span><h3>Activating never rewrites work in flight.</h3><p>A journey keeps the governance it was admitted under. When a newer version changes a gate it still has to pass, Direct raises drift and lets you adopt it deliberately.</p></div>
+            <div class="card reveal"><span class="k">Validate + simulate</span><h3>Break it on a whiteboard, not in a release.</h3><p>Validation rejects unreachable stages, rule cycles, bindings with no evidence source and outcome maps that let "unknown" allow. Simulation runs a gate against real or typed-in evidence and never calls a model.</p></div>
+            <div class="card reveal"><span class="k">Scopes + provenance</span><h3>Override in one area without changing everywhere.</h3><p>Product and Content can override a rule's parameters. Each value shows whether it is inherited, overridden, local or excluded, so you always know where a setting came from.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ CLASSIFICATION ═════════ -->
+<section id="classification">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Classification &amp; intake</span>
+            <h2>Classification describes. Admission decides.</h2>
+            <p>Every issue is classified and screened the moment it is registered. The results are recorded as facts with their provenance. None of them starts work, and none of them blocks you from starting it.</p>
+        </div>
+
+        <div class="split">
+            <div class="reveal">
+                <div class="stack-panel">
+                    <div class="aspect"><b>Kind</b><span>Bug, task or feature. Changed on the issue itself.</span></div>
+                    <div class="aspect"><b>Feasibility</b><span>Whether an agent can plausibly do it, or it needs a person.</span></div>
+                    <div class="aspect"><b>Criticality</b><span>How much it matters. Feeds priority, not permission.</span></div>
+                    <div class="aspect"><b>SemVer impact</b><span>The release the change warrants. Shown as a guess, with the question mark.</span></div>
+                    <div class="aspect"><b>Model tier</b><span>Which capability tier should implement it. Cheap work isn't sent to the expensive model.</span></div>
+                    <div class="aspect"><b>Labels</b><span>Applied from a known set, weighed by the Decision Engine.</span></div>
+                    <div class="aspect"><b>Screening</b><span>Security (text written to steer an agent) and content (spam, solicitation, conduct), on every issue and every comment.</span></div>
+                </div>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">A person can always say otherwise.</h3>
+                <p>These are bounded questions with a known set of answers, so Direct doesn't ask an open-ended agent. It asks a decision engine and records the verdict.</p>
+                <ul class="checks">
+                    <li><b>Your classification sits beside the classifier's.</b> It's recorded as an attributed decision. It doesn't overwrite the machine's verdict.</li>
+                    <li><b>Readiness is separate.</b> Ready, Pending or Held — held only when the issue is closed, screening blocked it, or its body says too little.</li>
+                    <li><b>Unclassified issues can still start.</b> Direct won't make you wait for a label to spend your own budget.</li>
+                    <li><b>Outsiders don't trigger work.</b> An issue from outside the organization is screened, flagged and kept away from agents until you decide.</li>
+                    <li><b>Flagged text is shown as plain text.</b> It's content marked as hostile, so it is never rendered.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reveal" style="margin-top:3.5rem">
+            <div class="frame">
+                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/backlog</span></div>
+                <img src="assets/img/backlog.png" alt="The Backlog: issues ordered by priority with repository, intent, classification, readiness and a Start Journey button on every row." loading="lazy" width="1440" height="1000" />
+            </div>
+            <p class="caption"><b>The Backlog.</b> Ordered by priority, dragged to reorder, dropped onto each other to group. Classification and readiness sit beside every row, and <b>Start Journey</b> is the only way work begins.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ OPERATIONS ═════════ -->
+<section id="operations" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">03 · Operate — closing the loop with production</span>
+            <h2>From an alert to a finding, before anyone opens a laptop.</h2>
+            <p>A watchdog that finds something wrong has two options: wake someone or be ignored. Direct adds a third. The alert goes to an agent that looks at once, resolves what it can, and hands a person the evidence for the rest.</p>
+        </div>
+
+        <div class="reveal">
+            <div class="pipeline">
+                <div class="pstep"><span class="n">01 · live</span><h4>Signal</h4><p>A resource probe, a failed build or a webhook from your systems. Direct reads its own payload and the Discord webhook shape.</p></div>
+                <div class="pstep"><span class="n">02 · live</span><h4>Deduplicate</h4><p>One alert per fingerprint. A resource down six hours costs one alert and one investigation.</p></div>
+                <div class="pstep"><span class="n">03 · live</span><h4>Investigate</h4><p>A worker with only the operational access you granted: a cluster, a runtime, logs.</p></div>
+                <div class="pstep"><span class="n">04 · live</span><h4>Resolve or hand over</h4><p>Resolved by the agent, or <em>Needs attention</em> with findings attached.</p></div>
+                <div class="pstep planned"><span class="n">05 · direction</span><h4>Fix through a journey</h4><p>The diagnosis becomes an issue that enters a governed journey, gates included.</p></div>
+                <div class="pstep planned"><span class="n">06 · direction</span><h4>Verify in production</h4><p>The same resource probe confirms the fix landed, and the alert closes itself.</p></div>
+            </div>
+            <div class="legend"><span class="l-live">Live in the product</span><span class="l-planned">Where we're taking it</span></div>
+        </div>
+
+        <div class="split top" style="margin-top:4rem">
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Environments and the things in them.</h3>
+                <p>An <strong>operational resource</strong> is anything worth knowing the health of: a Kubernetes cluster, a namespace, a database, a Chronicle server. Resources are grouped into environments — production, staging, a customer's installation — and nest, so a namespace is probed through its cluster's credentials.</p>
+                <ul class="checks">
+                    <li><b>A resource type is a class.</b> Add a technology by writing a class. There's no registry and no list to keep in step, and the Add dialog builds its form from what the type says it needs.</li>
+                    <li><b>Readings are documents. Transitions are events.</b> A probe every minute is 1,440 rows a day that would drown the log. Healthy → unhealthy is a fact and lives forever.</li>
+                    <li><b>Unknown is never reported.</b> A resource added a moment ago hasn't been looked at yet. That isn't an alert.</li>
+                    <li><b>Access is granted, not assumed.</b> With no operational access configured, an agent can only reason from the alert. The product tells you so at the top of the page.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <pre class="code"><span class="c"># any system can report — this is the whole integration</span>
+POST https://&lt;direct&gt;/webhooks/alerts
+{
+  <span class="k">"source"</span>:      <span class="s">"production"</span>,
+  <span class="k">"title"</span>:       <span class="s">"Loki is crash looping"</span>,
+  <span class="k">"summary"</span>:     <span class="s">"loki-0: CrashLoopBackOff (restarts: 370)"</span>,
+  <span class="k">"severity"</span>:    <span class="s">"critical"</span>,
+  <span class="k">"fingerprint"</span>: <span class="s">"pod:loki-0:CrashLoopBackOff"</span>
+}</pre>
+                <div class="alert-mock" style="margin-top:1.25rem">
+                    <div class="head">Operations · active investigations</div>
+                    <div class="row"><span class="ic">01</span><div><b>Worker never left the starting state</b><span>Scheduler · critical · investigating</span></div></div>
+                    <div class="row"><span class="ic">02</span><div><b>Chronicle server cannot be reached</b><span>Watchdog · critical · findings attached</span></div></div>
+                    <div class="row"><span class="ic">03</span><div><b>Reconciliation sweep has stopped running</b><span>Watchdog · needs attention · convert to issue</span></div></div>
+                </div>
+                <p class="caption">Illustration of the Operations board layout; rows are simplified.</p>
+            </div>
+        </div>
+
+        <div class="grid g3" style="margin-top:3.5rem">
+            <div class="card reveal"><span class="k">Watching the watcher</span><h3>The failures worth a check announce nothing.</h3><p>A recurring sweep that silently stops looks exactly like "nothing to do". Direct's own watchdog checks for that shape of fault: symptoms that are an absence.</p></div>
+            <div class="card reveal"><span class="k">Bring your alerting</span><h3>Point the webhook you already have.</h3><p>If your watchdog posts to Discord, pointing it at Direct is the whole integration. No second alerting path to keep working.</p></div>
+            <div class="card reveal"><span class="k">Findings, not notifications</span><h3>A person starts from evidence.</h3><p>Annotate an alert, resolve it, or turn it into a tracked issue in one step. Browser push covers only what nothing else resolves.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ CONTENT ═════════ -->
+<section id="content">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">04 · Publish — content for every outlet</span>
+            <h2>What shipped is only half the story.</h2>
+            <p>Releases pile up faster than anyone writes about them. Direct treats a blog post like an issue: it has a brief, a draft, an editorial gate and a publication that gets verified. The weekly digest is assembled from what your repositories actually released.</p>
+        </div>
+
+        <div class="split">
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/content/digest</span></div>
+                    <img src="assets/img/digest.png" alt="The weekly digest: a drafted summary of the week, extracted themes, and a version-movement table across repositories." loading="lazy" width="1440" height="1000" />
+                </div>
+                <p class="caption"><b>The weekly digest.</b> Themes extracted from the week's releases, a generated description in your voice, and the version movement for every repository. Publish is a button a person presses.</p>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">A journey for words, with gates.</h3>
+                <div class="rail compact" style="margin-bottom:1.5rem">
+                    <div class="stage"><span>01</span><b>Brief</b></div><div class="gate"><i></i></div>
+                    <div class="stage"><span>02</span><b>Draft</b></div><div class="gate"><i></i></div>
+                    <div class="stage"><span>03</span><b>Editorial</b></div><div class="gate"><i></i></div>
+                    <div class="stage"><span>04</span><b>Publish</b></div>
+                </div>
+                <ul class="checks">
+                    <li><b>Brief readiness.</b> A post needs a title and an objective before an agent drafts anything.</li>
+                    <li><b>Draft quality and editorial approval.</b> Same gate machinery as code, with its own rules and its own scope in the designer.</li>
+                    <li><b>Publication verification.</b> Publishing isn't finished until the publication is observed. A taken-down post raises drift.</li>
+                    <li><b>A writer agent, in a worker.</b> Drafts come from the content repository or from the issue that motivated them.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid g4" style="margin-top:3.5rem">
+            <div class="card outlet reveal"><span class="state live">In product</span><h3>Weekly digest</h3><p>Collected from releases, analysed for themes, reviewed, published.</p></div>
+            <div class="card outlet reveal"><span class="state live">In product</span><h3>Blog</h3><p>Brief to verified publication with editorial gates.</p></div>
+            <div class="card outlet reveal"><span class="state building">In product · early</span><h3>Talks &amp; LinkedIn</h3><p>Talk material and discovered posts with a suggested comment for each.</p></div>
+            <div class="card outlet reveal"><span class="state planned">Direction</span><h3>More outlets</h3><p>Newsletter, release notes, docs and social channels as targets for the same content.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ STRATEGY ═════════ -->
+<section id="strategy" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">05 · Steer — vision, roadmap, order</span>
+            <h2>Agents follow direction. Somebody has to set it.</h2>
+            <p>A backlog of 800 issues has no strategy. Direct keeps the vision next to the work, so triage and planning are grounded in what you're trying to build.</p>
+        </div>
+        <div class="grid g3">
+            <div class="card reveal"><span class="k">Vision</span><h3>Written down, and used.</h3><p>Associate repositories with a vision. Triage and planning read it, and a vision guard checks changes against it.</p></div>
+            <div class="card reveal"><span class="k">Roadmap</span><h3>Plans generated from the issues you select.</h3><p>Pick issues, get a plan. Revise it, apply it, or throw it away. The plan is a proposal and it stays one until you apply it.</p></div>
+            <div class="card reveal"><span class="k">Chains</span><h3>Step two waits for proof that step one landed.</h3><p>A fix goes into a framework; the app that consumes it can only be verified once the package is on the registry. Chains hold the later step until the release exists. The agent is told what it's continuing.</p></div>
+        </div>
+        <div class="grid g3" style="margin-top:1.25rem">
+            <div class="card reveal"><span class="k">Priority</span><h3>Drag to rank. Drop to group.</h3><p>A group is scheduled only when every issue in it is ready. Extra instructions travel with the agent's prompt.</p></div>
+            <div class="card reveal"><span class="k">Capacity</span><h3>Least-burnt account first.</h3><p>Work draws from a pool of AI accounts within a concurrency bound, and usage is tracked per provider and model.</p></div>
+            <div class="card reveal"><span class="k">Steering</span><h3>Watch a worker. Talk back to it.</h3><p>A running job streams its console into Direct. Send text into the session to steer it, or read the retained console after it ends.</p></div>
+        </div>
+        <div class="reveal" style="margin-top:3rem">
+            <div class="frame">
+                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/global</span></div>
+                <img src="assets/img/dashboard.png" alt="The Direct dashboard at a glance: workers running, awaiting your review, alerts needing attention, builds red, open issues, failed partitions." loading="lazy" width="1440" height="330" />
+            </div>
+            <p class="caption"><b>At a glance.</b> What's running, what awaits you, what's red. Work that finished stops being clutter.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ ARCHITECTURE ═════════ -->
+<section id="trust">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Under the hood</span>
+            <h2>Tools are not authority.</h2>
+            <p>Direct is not an agent loop with a dashboard bolted on. The trusted application owns state, sequencing, credentials and capacity. The agent is a replaceable, non-root worker holding only what one unit of work needs.</p>
+        </div>
+
+        <div class="arch reveal">
+            <div class="box">
+                <span class="k">Signals in</span>
+                <h4>Your systems</h4>
+                <ul><li>GitHub issues, PRs, builds</li><li>Webhooks + daily reconciliation</li><li>Alerts from running systems</li><li>Resource probes</li></ul>
+            </div>
+            <div class="join">→</div>
+            <div class="box mid">
+                <span class="k">Trusted control plane</span>
+                <h4>Direct</h4>
+                <ul><li>Journeys, gates, governance</li><li>Classification &amp; screening</li><li>Queue, accounts, limits</li><li>Event-sourced on Chronicle</li></ul>
+            </div>
+            <div class="join">→</div>
+            <div class="box">
+                <span class="k">Bounded workers</span>
+                <h4>Isolated agents</h4>
+                <ul><li>Docker or Kubernetes, non-root</li><li>Own worktree per job</li><li>Scoped callback token</li><li>Result back as comment, branch, PR</li></ul>
+            </div>
+        </div>
+
+        <div class="grid g3" style="margin-top:2rem">
+            <div class="card reveal"><span class="k">Credentials</span><h3>Never in the container spec.</h3><p>Provider keys, GitHub tokens and operational credentials arrive as a read-only secret file the entrypoint sources and deletes. They don't appear in <code>kubectl get job -o yaml</code> or <code>docker inspect</code>.</p></div>
+            <div class="card reveal"><span class="k">Source of truth</span><h3>GitHub is an integration.</h3><p>Direct records its own facts first and a reactor translates them into GitHub calls. A failed API call is something to recover, not a reason to lose the fact. Another provider means another adapter.</p></div>
+            <div class="card reveal"><span class="k">Your models</span><h3>Bring your own provider.</h3><p>Anthropic, OpenAI, Azure OpenAI or any OpenAI-compatible endpoint. Pool several accounts. Each agent runs on one provider or draws from a pool, and never both.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ POSITIONING ═════════ -->
+<section id="difference" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Where Direct sits</span>
+            <h2>Delivery tools ship. Governance tools record. Direct does both, and goes back for production.</h2>
+            <p>Autonomous-delivery products turn a backlog into pull requests. Governance products keep evidence for auditors. Direct's position is that those are the same system: the gate that lets an agent proceed is the evidence a reviewer reads later.</p>
+        </div>
+        <div class="reveal" style="overflow-x:auto">
+            <table class="compare">
+                <thead><tr><th></th><th>Autonomous delivery tools</th><th>Governance &amp; evidence platforms</th><th class="us">Direct</th></tr></thead>
+                <tbody>
+                    <tr><td>Starting point</td><td>Backlog to pull request</td><td>Pipeline events to audit trail</td><td class="us">Intent to journey, up to a ceiling you set</td></tr>
+                    <tr><td>How work is allowed</td><td>Labels, approval gates, PR review</td><td>Controls checked after the fact</td><td class="us">Gates evaluate rules against evidence before the next stage</td></tr>
+                    <tr><td>Uncertainty</td><td>Agent escalates when unsure</td><td>Compliance status</td><td class="us">Unknown is never a pass, by construction</td></tr>
+                    <tr><td>Production</td><td>Rarely in scope</td><td>Runtime monitoring for drift</td><td class="us">Alerts trigger agent investigations with scoped access</td></tr>
+                    <tr><td>Beyond code</td><td>—</td><td>—</td><td class="us">Content journeys, digest, roadmap, chains</td></tr>
+                    <tr><td>Rules live in</td><td>Repo config</td><td>Policy engine</td><td class="us">Versioned governance: draft, simulate, review, activate</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="caption" style="text-align:center; margin-top:1.5rem">A category comparison, not a benchmark. We describe what each type of product sets out to do. We haven't tested competitors head to head.</p>
+    </div>
+</section>
+
+<!-- ═════════ ROADMAP ═════════ -->
+<section id="roadmap">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Roadmap</span>
+            <h2>Where it is, and where it's going.</h2>
+            <p>Direct runs our own engineering today. The "next" and "later" columns are direction, not commitments, and dates move.</p>
+        </div>
+        <div class="roadmap">
+            <div class="rcol now reveal">
+                <h3><span class="dot"></span> Now</h3><span class="when">running in production</span>
+                <ul>
+                    <li><b>Journeys and gates</b> for issues and blog posts</li>
+                    <li><b>ADLC / Journey Designer</b> with versioned governance, validation and simulation</li>
+                    <li><b>Classification and screening</b> on every issue and comment</li>
+                    <li><b>Alerts and resource probes</b> with agent investigation</li>
+                    <li><b>Weekly digest</b>, blog, chains and roadmap plans</li>
+                    <li><b>Worker isolation</b> on Docker and Kubernetes</li>
+                </ul>
+            </div>
+            <div class="rcol reveal">
+                <h3><span class="dot"></span> Next</h3><span class="when">direction</span>
+                <ul>
+                    <li><b>Alert → journey.</b> An investigation's diagnosis becomes a governed issue in one step</li>
+                    <li><b>Environment-aware investigations</b> with per-environment access and approval</li>
+                    <li><b>Governance packs</b> — starter rule sets you can adopt and adapt</li>
+                    <li><b>Evidence export</b> for reviewers and auditors</li>
+                    <li><b>Wider watchdog coverage</b> as the internal checks are re-enabled</li>
+                </ul>
+            </div>
+            <div class="rcol reveal">
+                <h3><span class="dot"></span> Later</h3><span class="when">exploring</span>
+                <ul>
+                    <li><b>Fix verified in production</b> by the same probe that raised the alert</li>
+                    <li><b>Feedback loop into rules.</b> Drift and overrides propose rule changes for review</li>
+                    <li><b>Other issue and code providers</b> through the same provider-neutral commands</li>
+                    <li><b>More content outlets</b> from one brief</li>
+                    <li><b>Customer installations</b> as first-class environments</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ LIMITS ═════════ -->
+<section id="limits" class="alt">
+    <div class="wrap-narrow">
+        <div class="section-head reveal" style="margin-bottom:1.5rem">
+            <span class="eyebrow">Honest limits</span>
+            <h2>Where Direct stops.</h2>
+        </div>
+        <div class="reveal">
+            <div class="limit"><div><b>It's GitHub-first.</b><p>Issues, pull requests and identity come from GitHub. The internals are provider-neutral, but no other provider ships yet.</p></div></div>
+            <div class="limit"><div><b>Agents are only as good as the rules you activate.</b><p>A gate that has no applicable rule holds. A weak rule set passes weak work, and Direct will show you the verdict either way.</p></div></div>
+            <div class="limit"><div><b>LLM rules are judgement, not proof.</b><p>They carry a confidence threshold and never turn an unclear answer into a pass. Where you need proof, bind a deterministic or tool rule.</p></div></div>
+            <div class="limit"><div><b>Production access is opt-in.</b><p>Without an operational grant, an alert investigation can only reason from the alert. Some internal watchdog checks are currently paused while we harden them.</p></div></div>
+            <div class="limit"><div><b>It's coming soon.</b><p>Direct runs our own work today. Access opens to others in stages, so the login below will only admit accounts we've enabled.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ CTA ═════════ -->
+<section class="cta">
+    <div class="wrap">
+        <span class="pill" style="display:inline-block; margin-bottom:1.25rem">Coming soon</span>
+        <h2>Give agents a brief, a ceiling and a gate.</h2>
+        <p class="lede">Already have access? Sign in with GitHub and open your journeys.</p>
+        <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="https://app.cratis.direct">Log in to Direct</a>
+            <a class="btn btn-ghost btn-lg" href="https://cratis.io">Explore Cratis</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="wrap foot">
+        <div>© Cratis · Direct is part of the Cratis family alongside <a href="https://cratis.studio">Studio</a> and <a href="https://cratis.io">Chronicle</a>.</div>
+        <nav aria-label="Footer">
+            <a href="https://cratis.io">cratis.io</a>
+            <a href="https://cratis.studio">cratis.studio</a>
+            <a href="https://github.com/Cratis/Direct">GitHub</a>
+            <a href="https://app.cratis.direct">Log in</a>
+        </nav>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
