@@ -190,21 +190,21 @@ section.alt { background: var(--ground-deep); border-block: 1px solid var(--bord
 .loop-foot code { color: var(--amber); }
 
 /* ── Stage rail ──────────────────────────────────────────────────────────── */
-.rail { display: flex; align-items: stretch; gap: 0; overflow-x: auto; padding-bottom: .5rem; margin-bottom: 1rem; }
+.rail { display: flex; align-items: stretch; gap: 0; overflow-x: auto; padding: .5rem 0 .5rem; margin-bottom: 0; }
 .rail .stage, .rail .gate { flex: 0 0 auto; }
 .rail .stage { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: .8rem 1.1rem; min-width: 7.5rem; }
 .rail .stage span { font-family: var(--mono); font-size: .68rem; color: var(--text-faint); display: block; }
 .rail .stage b { color: var(--text-strong); font-weight: 600; }
 .rail .gate { display: grid; place-items: center; width: 3.2rem; position: relative; }
-.rail .gate::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--border); }
-.rail .gate i { position: relative; width: 1.7rem; height: 1.7rem; background: var(--amber-wash); border: 1.5px solid var(--amber); border-radius: 7px; transform: rotate(45deg); display: block; }
-.rail .gate em { position: absolute; bottom: -1.05rem; font-style: normal; font-family: var(--mono); font-size: .62rem; color: var(--amber); }
+.rail .gate::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--border); z-index: 0; }
+.rail .gate i { position: relative; z-index: 1; width: 1.7rem; height: 1.7rem; background: #3a2d18; border: 1.5px solid var(--amber); border-radius: 7px; transform: rotate(45deg); display: block; }
+.rail .gate em { position: absolute; top: calc(50% + 1.2rem); left: 50%; transform: translateX(-50%); font-style: normal; font-family: var(--mono); font-size: .62rem; color: var(--amber); }
 .rail .outcome { border: 1px dashed var(--green); background: var(--green-wash); border-radius: 8px; padding: .8rem 1.1rem; min-width: 7.5rem; }
 .rail .outcome span { font-family: var(--mono); font-size: .68rem; color: var(--green); display: block; }
 .rail .outcome b { color: var(--text-strong); }
 .rail.compact .stage { min-width: 0; padding: .6rem .85rem; }
 .rail.compact .gate { width: 2.2rem; }
-.rail-legend { font-family: var(--mono); font-size: .75rem; color: var(--text-faint); margin-top: 1.6rem; }
+.rail-legend { font-family: var(--mono); font-size: .75rem; color: var(--text-faint); margin-top: .75rem; }
 
 /* ── Split layouts ───────────────────────────────────────────────────────── */
 .split { display: grid; grid-template-columns: 1fr 1.25fr; gap: 3.5rem; align-items: center; }
